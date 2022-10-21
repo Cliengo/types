@@ -1,0 +1,10 @@
+{
+  "name": "cliengo_types",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "files": ["types/**/*"],
+  "devDependencies": {
+    "@types/react": "^18.0.21"
+  }
+}
