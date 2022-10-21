@@ -1,3 +1,5 @@
+import { JsonObject } from "./global";
+
 interface Labs {
   emptystate_leads: boolean;
   nexted_answers: boolean;

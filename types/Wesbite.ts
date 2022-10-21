@@ -1,3 +1,5 @@
+import { JsonObject, JsonValue } from "./global";
+
 export interface Website {
   id: string;
   url: string;

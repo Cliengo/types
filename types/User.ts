@@ -1,3 +1,6 @@
+import { LANG } from "./i18n";
+import { JsonValue } from './global';
+
 export interface User {
   name: string;
   email: string;
