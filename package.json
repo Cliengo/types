@@ -4,6 +4,10 @@
   "main": "index.ts",
   "license": "MIT",
   "files": ["types/**/*"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cliengo/types"
+  },
   "devDependencies": {
     "@types/react": "^18.0.21"
   }
