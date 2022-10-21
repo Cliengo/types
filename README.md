@@ -1,1 +1,3 @@
-# types!
+# Cliengo Types
+
+> just types

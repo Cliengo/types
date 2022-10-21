@@ -4,3 +4,7 @@ export * from './types/ChatbotConfig';
 export * from './types/Team';
 export * from './types/User';
 export * from './types/Wesbite';
+export * from './types/cocos/AppQuestion';
+export * from './types/cocos/AutomaticMessages';
+export * from './types/cocos/QuestionListType';
+export * from './types/cocos/QuestionNode';
