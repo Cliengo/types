@@ -1,11 +1,89 @@
-import { JsonObject } from "./global";
+import { JsonValue } from "./global";
 
-interface Labs {
-  emptystate_leads: boolean;
-  nexted_answers: boolean;
+export interface Account {
+  id: string;
+  email: string;
+  phone: string;
+  name: string;
+  contactName: string;
+  taxId: string;
+  creationDate: string;
+  whiteLabelId: string;
+  whiteLabelName: string;
+  isCliengoReseller: boolean;
+  whiteLabelLogoUrl: string;
+  whiteLabelEmail: string;
+  taxIdName: string;
+  googleMccId: string;
+  preSelectedLeads: number;
+  language: string;
+  timeZone: string;
+  vertical: string;
+  companySize: string;
+  businessTeamSize: string;
+  registerRole: string;
+  registerPhone: string;
+  knowledgeOrigin: string;
+  countryId: string;
+  labs: Labs;
+  chatUrl: string;
+  hasSubscription: boolean;
+  subscriptionMethod: string;
+  forceChargebee: boolean;
+  forceMercadoPago: boolean;
+  quickstartSteps: QuickstartSteps;
+  shouldFireScriptPixel: boolean;
+  affiliateProgramCode: string;
+  affiliate: string;
+  allowReferralAccess: boolean;
+  marketingCampaignsInfo: MarketingCampaignsInfo;
+  shouldFirePaymentPixel: boolean;
+  hashId: string;
+  hasInstalledScript: boolean;
+  scriptInstallTimestamp: number;
+  isWhatsAppFree: boolean;
+  isWhatsAppBasic: boolean;
+  showNewPlans: boolean;
+  isWhitelabelFlex: boolean;
+  hideLeads: boolean;
+  customUOCLimit: number;
+  autoRefreshContactsList: boolean;
+  communicationChannels: JsonValue[];
+  channel: string;
+  ecommercePlatform: string;
+  unitHsm: number;
+  unitLimitHsm: number;
+  isAgency: boolean;
+  isMercadoPago1: boolean;
+  leadCount: number;
+  leadLimit: number;
+  customUserLimit: number;
+  customWebsiteLimit: number;
+  leadResetDate: string;
+  daysToLeadResetDate: number;
+  planCurrency: string;
+  planPrice: number;
+  planName: string;
+  planType: string;
+  unitCountConversation: number;
+  unitLimitConversation: number;
+  autoBuyLeadPackageEnabled: boolean;
+  autoBuyConversationPackageEnabled: boolean;
 }
 
-interface QuickstartSteps {
+export interface Labs {
+  hsms_externo: boolean;
+  emptystate_leads: boolean;
+  cvanalysis: boolean;
+  whatsapp_premium: boolean;
+}
+
+export interface MarketingCampaignsInfo {
+  isAgency: boolean;
+  numberOfClients: number;
+}
+
+export interface QuickstartSteps {
   CREATE_ACCOUNT_COMPLETED: boolean;
   CHOOSE_APPEARANCE_VISITED: boolean;
   CHOOSE_APPEARANCE_COMPLETED: boolean;
@@ -17,70 +95,4 @@ interface QuickstartSteps {
   INSTALL_CHATBOT_COMPLETED: boolean;
   COMPLETE_INFO_VISITED: boolean;
   COMPLETE_INFO_COMPLETED: boolean;
-}
-
-export interface Account {
-  id: string;
-  email: string;
-  phone: string;
-  name: string;
-  contactName: string;
-  taxId: string;
-  creationDate: Date;
-  whiteLabelId: string;
-  whiteLabelName: string;
-  isCliengoReseller: boolean;
-  whiteLabelLogoUrl: string;
-  whiteLabelEmail: string;
-  taxIdName: string;
-  leadCount: number;
-  leadLimit: number;
-  leadCountTotal: number;
-  googleMccId: string;
-  preSelectedLeads: number;
-  language: string;
-  timeZone: string;
-  leadResetDate: Date;
-  daysToLeadResetDate: number;
-  vertical: string;
-  companySize: string;
-  businessTeamSize: string;
-  registerRole: string;
-  registerPhone: string;
-  knowledgeOrigin: string;
-  countryId: string;
-  planCurrency: string;
-  planName: string;
-  labs: Labs;
-  chatUrl: string;
-  hasSubscription: boolean;
-  forceChargebee: boolean;
-  forceMercadoPago: boolean;
-  quickstartSteps: QuickstartSteps;
-  shouldFireScriptPixel: boolean;
-  affiliateProgramCode: string;
-  affiliate: string;
-  allowReferralAccess: boolean;
-  marketingCampaignsInfo: JsonObject;
-  shouldFirePaymentPixel: boolean;
-  hashId: string;
-  hasInstalledScript: boolean;
-  scriptInstallTimestamp: number;
-  isWhatsAppFree: boolean;
-  isWhatsAppBasic: boolean;
-  showNewPlans: boolean;
-  isWhitelabelFlex: boolean;
-  hideLeads: boolean;
-  autoBuyLeadPackageEnabled: boolean;
-  autoBuyConversationPackageEnabled: boolean;
-  customUOCLimit: number;
-  autoRefreshContactsList: boolean;
-  communicationChannels: string[];
-  channel: string;
-  ecommercePlatform: string;
-  unitCountConversation: number;
-  unitLimitConversation: number;
-  unitHsm: number;
-  unitLimitHsm: number;
-  isMercadoPago1: boolean;
 }
