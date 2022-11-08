@@ -4,6 +4,7 @@ export interface AccountPlan {
   description: string;
   isAnnualPlan: boolean;
   leadLimit: number;
+  conversationLimit: number;
   websiteLimit: number;
   userLimit: number;
   priceARS: number;
