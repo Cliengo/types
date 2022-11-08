@@ -1,4 +1,4 @@
-export interface AccounPlan {
+export interface AccountPlan {
   id: string;
   name: string;
   description: string;
@@ -16,6 +16,7 @@ export interface AccounPlan {
   imageUrl: string;
   upgradePrice: number;
   planRemainingTime: PlanRemainingTime;
+  tier: 'TIER_0' | 'TIER_1' | 'TIER_2' | 'TIER_3' | 'TIER_4' | 'TIER_5' | 'TIER_6'
 }
 
 export interface PlanRemainingTime {
