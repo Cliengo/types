@@ -69,7 +69,6 @@ export interface Account {
   unitLimitConversation: number;
   autoBuyLeadPackageEnabled: boolean;
   autoBuyConversationPackageEnabled: boolean;
-  futurePlan?: string;
 }
 
 export interface Labs {
