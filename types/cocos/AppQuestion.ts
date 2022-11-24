@@ -16,6 +16,7 @@ export type AppQuestion = {
     assignedTo: string[],
     tag: string,
     alternativeTexts: Pick<Question['alternative_texts'][number], '_id' | 'text'>,
+    isDefaultQuestion: boolean,
     interfaceConfig: {
       canBeDeleted: boolean,
       canBeEdited: boolean,
