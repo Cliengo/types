@@ -4,4 +4,5 @@ export type QuestionNode = {
   ancestors: string[];
   parent: string;
   internalName: string;
+  responseOptions: string[];
 }
