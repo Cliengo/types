@@ -10,7 +10,7 @@ export type AppQuestion = {
     responseOptions: string[],
     parent: string,
     internalName: string,
-    showChildrens: true,
+    showChildrens: boolean,
     disabled: boolean,
     required: boolean,
     assignedTo: string[],
