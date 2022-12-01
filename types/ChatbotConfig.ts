@@ -39,7 +39,7 @@ export type Question = {
   response_options: string[];
   assigned_to: string[];
   slot_id: string;
-  isDefaultQuestion: boolean;
+  is_default_question: boolean;
   conditions_to_show: {
     [key: string]: JsonObject;
   };
