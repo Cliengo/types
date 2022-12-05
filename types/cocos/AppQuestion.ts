@@ -7,6 +7,7 @@ export type AppQuestion = {
     descriptions: string[],
     responseType: QuestionResponseType,
     ancestors: string[],
+    descendants: string[],
     responseOptions: string[],
     parent: string,
     internalName: string,
