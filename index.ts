@@ -8,3 +8,4 @@ export * from './types/cocos/AppQuestion';
 export * from './types/cocos/AutomaticMessages';
 export * from './types/cocos/QuestionListType';
 export * from './types/cocos/QuestionNode';
+export * from './types/Chatbot';
