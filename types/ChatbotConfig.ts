@@ -76,6 +76,8 @@ export interface ChatbotConfig {
   company_id: string;
   chatbotName: string;
   tags: string[];
+  creation_date: string;
+  update_date: string;
   assign_priority: AssignPriority[];
   template_code: TEMPLATE_CODE;
   lang: ChatbotConfigLang;
