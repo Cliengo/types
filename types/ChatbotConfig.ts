@@ -56,7 +56,7 @@ export type Question = {
   actions: JsonObject[];
   internal_name: string;
   tag: string | null;
-  go_to_internal_name: string;
+  go_to_internal_name?: string | null;
 };
 
 export type interfaceConfig =
