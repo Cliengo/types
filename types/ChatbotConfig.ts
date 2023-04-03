@@ -40,6 +40,7 @@ export type Question = {
   assigned_to: string[];
   slot_id: string;
   is_default_question: boolean;
+  is_empty_text:boolean;
   conditions_to_show: {
     [key: string]: JsonObject;
   };
