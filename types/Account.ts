@@ -25,7 +25,7 @@ export interface Account {
   registerPhone: string;
   knowledgeOrigin: string;
   countryId: string;
-  labs: Labs;
+  labs: Record<string, boolean>;
   chatUrl: string;
   hasSubscription: boolean;
   subscriptionMethod: string;
@@ -69,13 +69,6 @@ export interface Account {
   unitLimitConversation: number;
   autoBuyLeadPackageEnabled: boolean;
   autoBuyConversationPackageEnabled: boolean;
-}
-
-export interface Labs {
-  hsms_externo: boolean;
-  emptystate_leads: boolean;
-  cvanalysis: boolean;
-  whatsapp_premium: boolean;
 }
 
 export interface MarketingCampaignsInfo {

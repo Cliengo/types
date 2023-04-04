@@ -15,7 +15,7 @@ export interface User {
   imageUrl: string;
   thumbnailUrl: string;
   language: LANG;
-  labs: Labs;
+  labs: Record<string, boolean>;
   tutorials: string[];
   permissions: string[];
   roles: string[];
@@ -28,12 +28,6 @@ export interface User {
   delighted: boolean;
   deletable: boolean;
   isEmailVerified: boolean;
-}
-
-interface Labs {
-  uiv2: boolean;
-  new_detail_client: boolean;
-  dashboardv2: boolean;
 }
 
 interface Migrations {
